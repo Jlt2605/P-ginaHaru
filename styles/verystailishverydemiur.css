@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Nerko+One&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+:root{
+    --color-primario: deepskyblue;
+    --color-secundario: blue;
+    --color-terceario: #000000;
+    --color-cuarto: bisque;
+
+    --fuente-amsterdam: 'New Amsterdam', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-VICWA: 'Edu VIC WA NT Beginner', cursive;
+    --fuente-neko: 'Nerko One', cursive;
+}
+
+* {
+    padding:0;
+    margin: 0;
+}
+
+.header{
+    padding: 2% 0% 0% 10%; /*el primero es top, segundo right, tercero bottom, y último left*/
+}
+
+.header_menucito{
+    display: flex;
+    gap: 80px;
+}
+
+.botonMenu{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
+body{
+    background-color:var(--color-cuarto);
+    color:var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.titulo-monita{
+    color:var(--color-primario);
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 1% 10%; /*el primer porcentaje es vertical, y el otro es horizontal*/
+    justify-content: space-between;
+    gap: 82px;
+}
+.contenidodepresentacion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.miaumiau{
+    font-size: 50px;
+    font-family: var(--fuente-VICWA);
+}
+.bumbumbum{
+    font-size: 2.5rem;
+    font-family: var(--fuente-neko);
+}
+.imagenn{
+    width: 50%;
+}
+.harumd{
+    width: 50%;
+}
+.botoncitos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.botonnn{
+    width: 50%;;
+    color:var(--color-primario);
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 0.5rem;
+    font-family: var(--fuente-VICWA);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 3.5px solid transparent;
+    transition: 0.01ms ease;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.botonnn:hover{
+    border: 3.5px solid var(--color-terceario);
+    background-color:var(--color-secundario);
+    
+}
+.presentacionRedes{
+    font-family: var(--fuente-amsterdam);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.parte_de_abajo{
+    background-color: var(--color-secundario);
+    padding: 1.5rem;
+    color: var(--color-terceario);
+    text-align: center;
+    font-family: var(--fuente-neko);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media(max-width:1200px ){
+    .header{
+        padding: 10%;
+    }
+    .header_menucito{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .contenidodepresentacion{
+        width: auto;/*si le ponemos 100%, nos da el mismo resultado que si ponemos auto*/
+    }
+}
